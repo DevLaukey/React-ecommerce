@@ -1,13 +1,11 @@
 import './App.css';
-import Content from './components/Content';
 import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="landing">
+    <div className="App">
       <Nav />
       <hr class="line" />
-      <Content />
     </div>
   );
 }

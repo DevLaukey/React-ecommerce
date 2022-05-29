@@ -1,5 +1,4 @@
 import './App.css';
-import Content from './components/Content';
 import Nav from './components/Nav';
 
 function App() {
@@ -7,7 +6,6 @@ function App() {
     <div className="landing">
       <Nav />
       <hr class="line" />
-      <Content />
     </div>
   );
 }
