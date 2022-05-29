@@ -1,0 +1,7 @@
+.content_modal{
+    background-color: aqua;
+    top: 0px;
+    margin-top: 5.5em;
+    position:absolute;
+z-index: 100;
+}

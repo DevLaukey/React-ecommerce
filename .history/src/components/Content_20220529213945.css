@@ -1,0 +1,10 @@
+.content_modal{
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+    margin-top: 5.5em;
+    width: 90%;
+    padding: 1em 3em;
+    height: 60%;
+    position:absolute;
+z-index: 100;
+}

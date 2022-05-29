@@ -1,0 +1,8 @@
+.content_modal{
+    background-color: aqua;
+    top: 0px;
+    margin-top: 5.5em;
+    width: 100%;
+    position:absolute;
+z-index: 100;
+}

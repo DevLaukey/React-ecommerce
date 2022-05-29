@@ -1,0 +1,11 @@
+.content_modal{
+    background-color: transparent;
+    opacity: 0.9 gray;
+    top: 0px;
+    margin-top: 5.5em;
+    width: 100%;
+    padding: 1em 3em;
+    height: 60%;
+    position:absolute;
+z-index: 100;
+}
