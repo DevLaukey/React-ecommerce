@@ -1,0 +1,98 @@
+
+.modal{
+    position: absolute;
+    top: 15vh !important;
+ background-color: rgba(146, 132, 132, 0.774);
+    z-index: 20;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 90%;
+    padding: 10vh 20px 5vh 20px;
+    height:"70vh";
+    text-align: center;
+    
+}
+.fill{
+    fill: white;
+}
+.fill:hover{
+    fill: hsl(26, 100%, 55%);;
+}
+.close{
+    display: flex;
+    justify-content: flex-end;
+}
+.close:hover{
+    cursor: pointer;
+}   
+.big-picModal{
+    width: 100%;
+    margin-top: -10px;
+    margin-left:20px;
+    border-radius: 15px;
+}
+.modal_thumbnails {
+  display: flex !important;
+  margin-left: 20px;
+}
+.modal-thumbnail{
+    border-radius:15px;
+    width:70px;
+    margin-right: 5px;
+    flex-direction: row;
+}
+
+  .arrow {
+    padding: 0.75rem;
+
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    color: black;
+    border-radius: 55%;
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
+@media  (min-width: 768px) {
+    .modal{
+    position: absolute;
+    z-index: 20;
+    /* background-color:aqua; */
+    width: 70%;
+    margin-left: 10px;
+    height: 80vh;
+    margin-left: 25vh;
+}
+.modal-image{
+    width: 100%;
+  
+}
+.big-picModal{
+    width: 45%;
+    text-align: center;
+    /* margin-top: /.5vh; */
+    /* margin-left:25vw; */
+}
+.modal_thumbnails {
+  display: flex !important;
+  margin-left: 18vw;
+}
+.modal-thumbnail{
+    width:75px;
+    margin-right: 5px;
+    /* flex-direction: row; */
+}
+  .arrow {
+    padding: 0.75rem;
+
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    color: black;
+    border-radius: 55%;
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
+}

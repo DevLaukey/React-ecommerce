@@ -1,0 +1,9 @@
+.modal{
+    position: absolute;
+    top: 40vh !important;
+    left: 30vw;
+    background-color: rgb(125, 129, 125);
+    z-index: 20;
+    padding: 5%;
+
+}

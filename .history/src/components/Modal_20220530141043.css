@@ -1,0 +1,6 @@
+.modal{
+    position: absolute;
+    top: 30px !important;
+    z-index: 20;
+
+}

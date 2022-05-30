@@ -1,0 +1,6 @@
+.modal{
+    position: relative;
+    top: 0 !important;
+    z-index: 2000;
+
+}
