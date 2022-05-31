@@ -31,7 +31,7 @@ function Content() {
       <div class="images">
         <ModalPics />
         <div class="image">
-          <img class="big-pic" src={url} alt="" onClick={() => setShow(true)} />
+          <img class="big-pic" src={url} alt="" onclick={() => setShow(true)} />
         </div>
         <div class="slider">
           <div class="arrow">

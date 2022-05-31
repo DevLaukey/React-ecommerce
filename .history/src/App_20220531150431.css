@@ -33,10 +33,10 @@ nav {
 .options {
   font-weight: 100;
   margin-right: 35px;
-  padding-bottom: 15px;
 }
 .options:hover{
 border-bottom: solid 3px hsl(26, 100%, 55%);
+/* margin-bottom: 5px; */
 }
 .nav-icons {
   display: flex;

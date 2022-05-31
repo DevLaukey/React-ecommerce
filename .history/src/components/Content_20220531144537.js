@@ -1,5 +1,5 @@
 
-import React, { useContext,useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../App.css";
 import { CardContext } from "../Contexts/CardContext";
 import TransitionsModal from "./Modal";
@@ -17,7 +17,6 @@ function Content() {
   const handleMinus = () => {
     if (count !== 0) {
       setCount(count - 1);
-      setIsEmpty(true)
     }
   };
 
@@ -26,12 +25,39 @@ function Content() {
     setIsEmpty(false);
   };
 
+  
+    const changeImages = useEffect((id) => {
+      
+        switch (id) {
+          case 1:
+            setUrl(
+              "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-1.jpg"
+            );
+            break;
+          case 2:
+            setUrl(
+              "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-2.jpg"
+            );
+            break;
+          case 3:
+            setUrl(
+              "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-3.jpg"
+            );
+            break;
+          default:
+            setUrl(
+              "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-1.jpg"
+            );
+        }
+        return url;
+      
+    }, [url]);
   return (
     <div class="content">
       <div class="images">
         <ModalPics />
         <div class="image">
-          <img class="big-pic" src={url} alt="" onClick={() => setShow(true)} />
+          <img class="big-pic" src={url} alt="" />
         </div>
         <div class="slider">
           <div class="arrow">

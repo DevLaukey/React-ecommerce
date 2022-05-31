@@ -64,44 +64,24 @@ function ModalPics() {
       <Modal.Footer centered>
         <div class="modal_thumbnails">
           <img
-            onClick={() =>
-              setUrl(
-                "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-1.jpg"
-              )
-            }
-            class="thumbnail"
+            class="modal-thumbnail"
             src="https://devlaukey.github.io/ecommerce-design/assets/image-product-1-thumbnail.jpg"
             alt=""
           />
 
           <img
-            onClick={() =>
-              setUrl(
-                "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-2.jpg"
-              )
-            }
-            class="thumbnail"
+            class="modal-thumbnail"
             src="https://devlaukey.github.io/ecommerce-design/assets/image-product-2-thumbnail.jpg"
             alt=""
           />
 
           <img
-            onClick={() =>
-              setUrl(
-                "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-3.jpg"
-              )
-            }
-            class="thumbnail"
+            class="modal-thumbnail"
             src="https://devlaukey.github.io/ecommerce-design/assets/image-product-3-thumbnail.jpg"
             alt=""
           />
           <img
-            onClick={() =>
-              setUrl(
-                "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-4.jpg"
-              )
-            }
-            class="thumbnail"
+            class="modal-thumbnail"
             src="https://devlaukey.github.io/ecommerce-design/assets/image-product-4-thumbnail.jpg"
             alt=""
           />

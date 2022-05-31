@@ -1,5 +1,5 @@
 
-import React, { useContext,useState } from "react";
+import React, { useContext } from "react";
 import "../App.css";
 import { CardContext } from "../Contexts/CardContext";
 import TransitionsModal from "./Modal";
@@ -9,15 +9,12 @@ import ModalPics from "./ModalPics";
 
 function Content() {
   const {count, setCount, setOpen, setIsEmpty, setShow} = useContext(CardContext);
-  const [url, setUrl] = useState(
-    "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-1.jpg"
-  );
+ 
  
   
   const handleMinus = () => {
     if (count !== 0) {
       setCount(count - 1);
-      setIsEmpty(true)
     }
   };
 
@@ -26,12 +23,32 @@ function Content() {
     setIsEmpty(false);
   };
 
+  const changeImages = (id) => {
+    var url;
+    switch (id) {
+      case 1:
+        url = "";
+        break;
+      case 2:
+        url = "";
+        break;
+      case 3:
+        url = "";
+        break;
+      default:
+        url = "";
+    }
+  }
   return (
     <div class="content">
-      <div class="images">
+      <div class="images" onClick={() => setShow(true)}>
         <ModalPics />
         <div class="image">
-          <img class="big-pic" src={url} alt="" onClick={() => setShow(true)} />
+          <img
+            class="big-pic"
+            src={"https://devlaukey.github.io/ecommerce-design/assets/image-product-1.jpg"}
+            alt=""
+          />
         </div>
         <div class="slider">
           <div class="arrow">
@@ -63,43 +80,23 @@ function Content() {
 
         <div class="thumbnails">
           <img
-            onClick={() =>
-              setUrl(
-                "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-1.jpg"
-              )
-            }
             class="thumbnail"
             src="https://devlaukey.github.io/ecommerce-design/assets/image-product-1-thumbnail.jpg"
             alt=""
           />
 
           <img
-            onClick={() =>
-              setUrl(
-                "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-2.jpg"
-              )
-            }
             class="thumbnail"
             src="https://devlaukey.github.io/ecommerce-design/assets/image-product-2-thumbnail.jpg"
             alt=""
           />
 
           <img
-            onClick={() =>
-              setUrl(
-                "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-3.jpg"
-              )
-            }
             class="thumbnail"
             src="https://devlaukey.github.io/ecommerce-design/assets/image-product-3-thumbnail.jpg"
             alt=""
           />
           <img
-            onClick={() =>
-              setUrl(
-                "https://raw.githubusercontent.com/DevLaukey/ecommerce-design/main/assets/image-product-4.jpg"
-              )
-            }
             class="thumbnail"
             src="https://devlaukey.github.io/ecommerce-design/assets/image-product-4-thumbnail.jpg"
             alt=""

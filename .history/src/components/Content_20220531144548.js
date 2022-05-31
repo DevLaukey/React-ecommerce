@@ -1,5 +1,5 @@
 
-import React, { useContext,useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../App.css";
 import { CardContext } from "../Contexts/CardContext";
 import TransitionsModal from "./Modal";
@@ -17,7 +17,6 @@ function Content() {
   const handleMinus = () => {
     if (count !== 0) {
       setCount(count - 1);
-      setIsEmpty(true)
     }
   };
 
@@ -31,7 +30,7 @@ function Content() {
       <div class="images">
         <ModalPics />
         <div class="image">
-          <img class="big-pic" src={url} alt="" onClick={() => setShow(true)} />
+          <img class="big-pic" src={url} alt="" />
         </div>
         <div class="slider">
           <div class="arrow">

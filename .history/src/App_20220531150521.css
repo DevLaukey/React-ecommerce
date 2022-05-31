@@ -37,6 +37,7 @@ nav {
 }
 .options:hover{
 border-bottom: solid 3px hsl(26, 100%, 55%);
+z-index: 23;
 }
 .nav-icons {
   display: flex;
